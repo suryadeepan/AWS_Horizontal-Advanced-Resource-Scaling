@@ -1,0 +1,36 @@
+{
+  "load_generator_ami" : "ami-0120179ee1facd28b",
+
+  "web_service_ami" : "ami-0496215388838dae0",
+
+  "instance_type" : "m5.large",
+
+  "asg_max_size" : 5,
+
+  "asg_min_size" : 2,
+
+  "asg_desired_size" : 2,
+
+  "asd_health_check_grace_period" : 120,
+
+  "asg_default_cool_down_period" : 30,
+
+  "cool_down_period_scale_in" : 60,
+
+  "cool_down_period_scale_out" : 100,
+
+  "scale_out_adjustment" : 1,
+
+  "scale_in_adjustment" : -1,
+
+  "alarm_period" : 60,
+
+  "cpu_lower_threshold" : 40.0,
+
+  "cpu_upper_threshold" : 80.0,
+
+  "alarm_eval_periods_scale_out" : 1,
+
+  "alarm_eval_periods_scale_in" : 1
+
+}
